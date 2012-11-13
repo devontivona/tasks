@@ -1,5 +1,5 @@
 //
-//  TKTasksViewController.h
+//  TKTextFieldCell.h
 //  Tasks
 //
 //  Created by Devon Tivona on 11/13/12.
@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <RestKit/RestKit.h>
 
-@interface TKTasksViewController : UITableViewController <RKObjectLoaderDelegate>
+@interface TKTextFieldCell : UITableViewCell
+
+@property (weak, nonatomic) IBOutlet UITextField *textField;
 
 @end

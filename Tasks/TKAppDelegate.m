@@ -8,15 +8,37 @@
 
 #import "TKAppDelegate.h"
 #import <RestKit/RestKit.h>
+#import "TKTask.h"
 
 @implementation TKAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    // Set up the base URL
+    RKURL *baseURL = [RKURL URLWithBaseURLString:@"http://tasks.monospacecollective.com/"];
+    RKObjectManager *objectManager = [RKObjectManager objectManagerWithBaseURL:baseURL];
+    objectManager.client.baseURL = baseURL;
+    
+    // Map TKTask class with the JSON response
+    RKObjectMapping *taskMapping = [RKObjectMapping mappingForClass:[TKTask class]];
+    [taskMapping mapKeyPathsToAttributes: @"name", @"name",
+                                          @"id", @"remoteId",
+                                          @"due_datetime", @"dueDate",
+                                          @"user_id", @"userId",
+                                          @"complete", @"complete", nil];
+    [objectManager.mappingProvider setMapping:taskMapping forKeyPath:@""];
+    
+    RKObjectMapping *taskSerializationMapping = [taskMapping inverseMapping];
+    [objectManager.mappingProvider registerMapping:taskSerializationMapping withRootKeyPath:@"task"];
+    [objectManager.mappingProvider setSerializationMapping:taskSerializationMapping forClass:[TKTask class]];
+    
+    [objectManager.router routeClass:[TKTask class] toResourcePath:@"/tasks.json" forMethod:RKRequestMethodPOST];
+    [objectManager.router routeClass:[TKTask class] toResourcePath:@"/tasks/:remoteId\\.json" forMethod:RKRequestMethodPUT];
+    [objectManager.router routeClass:[TKTask class] toResourcePath:@"/tasks/:remoteId\\.json" forMethod:RKRequestMethodDELETE];
+
     return YES;
 }
-							
+
 - (void)applicationWillResignActive:(UIApplication *)application
 {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

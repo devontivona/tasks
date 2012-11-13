@@ -19,6 +19,11 @@
 		9199549816523A5E00A6A1F4 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9199549716523A5E00A6A1F4 /* Default-568h@2x.png */; };
 		9199549B16523A5E00A6A1F4 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9199549916523A5E00A6A1F4 /* MainStoryboard.storyboard */; };
 		919954B516523B4B00A6A1F4 /* TKTasksViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 919954B416523B4B00A6A1F4 /* TKTasksViewController.m */; };
+		919954B816523D4500A6A1F4 /* TKTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 919954B716523D4500A6A1F4 /* TKTask.m */; };
+		919954BB165244C600A6A1F4 /* TKTaskAddViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 919954BA165244C600A6A1F4 /* TKTaskAddViewController.m */; };
+		919954BE165247F100A6A1F4 /* TKTextFieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 919954BD165247F100A6A1F4 /* TKTextFieldCell.m */; };
+		919954E01652566F00A6A1F4 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 919954DF1652566F00A6A1F4 /* Icon@2x.png */; };
+		919954E21652567300A6A1F4 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 919954E11652567300A6A1F4 /* Icon.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +44,14 @@
 		9199549A16523A5E00A6A1F4 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		919954B316523B4B00A6A1F4 /* TKTasksViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKTasksViewController.h; sourceTree = "<group>"; };
 		919954B416523B4B00A6A1F4 /* TKTasksViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKTasksViewController.m; sourceTree = "<group>"; };
+		919954B616523D4500A6A1F4 /* TKTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKTask.h; sourceTree = "<group>"; };
+		919954B716523D4500A6A1F4 /* TKTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKTask.m; sourceTree = "<group>"; };
+		919954B9165244C600A6A1F4 /* TKTaskAddViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKTaskAddViewController.h; sourceTree = "<group>"; };
+		919954BA165244C600A6A1F4 /* TKTaskAddViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKTaskAddViewController.m; sourceTree = "<group>"; };
+		919954BC165247F100A6A1F4 /* TKTextFieldCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKTextFieldCell.h; sourceTree = "<group>"; };
+		919954BD165247F100A6A1F4 /* TKTextFieldCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKTextFieldCell.m; sourceTree = "<group>"; };
+		919954DF1652566F00A6A1F4 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon@2x.png"; path = "../Icon@2x.png"; sourceTree = "<group>"; };
+		919954E11652567300A6A1F4 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon.png; path = ../Icon.png; sourceTree = "<group>"; };
 		F61CBC876BC9443FAAED6270 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
@@ -89,11 +102,17 @@
 		9199548716523A5E00A6A1F4 /* Tasks */ = {
 			isa = PBXGroup;
 			children = (
+				9199549916523A5E00A6A1F4 /* MainStoryboard.storyboard */,
+				919954B616523D4500A6A1F4 /* TKTask.h */,
+				919954B716523D4500A6A1F4 /* TKTask.m */,
 				9199549016523A5E00A6A1F4 /* TKAppDelegate.h */,
 				9199549116523A5E00A6A1F4 /* TKAppDelegate.m */,
 				919954B316523B4B00A6A1F4 /* TKTasksViewController.h */,
 				919954B416523B4B00A6A1F4 /* TKTasksViewController.m */,
-				9199549916523A5E00A6A1F4 /* MainStoryboard.storyboard */,
+				919954B9165244C600A6A1F4 /* TKTaskAddViewController.h */,
+				919954BA165244C600A6A1F4 /* TKTaskAddViewController.m */,
+				919954BC165247F100A6A1F4 /* TKTextFieldCell.h */,
+				919954BD165247F100A6A1F4 /* TKTextFieldCell.m */,
 				9199548816523A5E00A6A1F4 /* Supporting Files */,
 			);
 			path = Tasks;
@@ -102,6 +121,8 @@
 		9199548816523A5E00A6A1F4 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				919954E11652567300A6A1F4 /* Icon.png */,
+				919954DF1652566F00A6A1F4 /* Icon@2x.png */,
 				9199548916523A5E00A6A1F4 /* Tasks-Info.plist */,
 				9199548A16523A5E00A6A1F4 /* InfoPlist.strings */,
 				9199548D16523A5E00A6A1F4 /* main.m */,
@@ -171,6 +192,8 @@
 				9199549616523A5E00A6A1F4 /* Default@2x.png in Resources */,
 				9199549816523A5E00A6A1F4 /* Default-568h@2x.png in Resources */,
 				9199549B16523A5E00A6A1F4 /* MainStoryboard.storyboard in Resources */,
+				919954E01652566F00A6A1F4 /* Icon@2x.png in Resources */,
+				919954E21652567300A6A1F4 /* Icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,6 +224,9 @@
 				9199548E16523A5E00A6A1F4 /* main.m in Sources */,
 				9199549216523A5E00A6A1F4 /* TKAppDelegate.m in Sources */,
 				919954B516523B4B00A6A1F4 /* TKTasksViewController.m in Sources */,
+				919954B816523D4500A6A1F4 /* TKTask.m in Sources */,
+				919954BB165244C600A6A1F4 /* TKTaskAddViewController.m in Sources */,
+				919954BE165247F100A6A1F4 /* TKTextFieldCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
