@@ -7,6 +7,7 @@
 //
 
 #import "TKAppDelegate.h"
+#import <RestKit/RestKit.h>
 
 @implementation TKAppDelegate
 

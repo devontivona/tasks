@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2ADA86AA98194C72B1229F15 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 36D3101934B14492B0AD6A7B /* libPods.a */; };
 		9199548216523A5E00A6A1F4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9199548116523A5E00A6A1F4 /* UIKit.framework */; };
 		9199548416523A5E00A6A1F4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9199548316523A5E00A6A1F4 /* Foundation.framework */; };
 		9199548616523A5E00A6A1F4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9199548516523A5E00A6A1F4 /* CoreGraphics.framework */; };
@@ -17,14 +18,15 @@
 		9199549616523A5E00A6A1F4 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9199549516523A5E00A6A1F4 /* Default@2x.png */; };
 		9199549816523A5E00A6A1F4 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9199549716523A5E00A6A1F4 /* Default-568h@2x.png */; };
 		9199549B16523A5E00A6A1F4 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9199549916523A5E00A6A1F4 /* MainStoryboard.storyboard */; };
-		9199549E16523A5E00A6A1F4 /* TKViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9199549D16523A5E00A6A1F4 /* TKViewController.m */; };
+		919954B516523B4B00A6A1F4 /* TKTasksViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 919954B416523B4B00A6A1F4 /* TKTasksViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		36D3101934B14492B0AD6A7B /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		9199547D16523A5E00A6A1F4 /* Tasks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tasks.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		9199548116523A5E00A6A1F4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		9199548316523A5E00A6A1F4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		9199548516523A5E00A6A1F4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		9199548116523A5E00A6A1F4 /* UIKit.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		9199548316523A5E00A6A1F4 /* Foundation.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		9199548516523A5E00A6A1F4 /* CoreGraphics.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		9199548916523A5E00A6A1F4 /* Tasks-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tasks-Info.plist"; sourceTree = "<group>"; };
 		9199548B16523A5E00A6A1F4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		9199548D16523A5E00A6A1F4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -35,8 +37,9 @@
 		9199549516523A5E00A6A1F4 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		9199549716523A5E00A6A1F4 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		9199549A16523A5E00A6A1F4 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		9199549C16523A5E00A6A1F4 /* TKViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TKViewController.h; sourceTree = "<group>"; };
-		9199549D16523A5E00A6A1F4 /* TKViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TKViewController.m; sourceTree = "<group>"; };
+		919954B316523B4B00A6A1F4 /* TKTasksViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKTasksViewController.h; sourceTree = "<group>"; };
+		919954B416523B4B00A6A1F4 /* TKTasksViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKTasksViewController.m; sourceTree = "<group>"; };
+		F61CBC876BC9443FAAED6270 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +50,7 @@
 				9199548216523A5E00A6A1F4 /* UIKit.framework in Frameworks */,
 				9199548416523A5E00A6A1F4 /* Foundation.framework in Frameworks */,
 				9199548616523A5E00A6A1F4 /* CoreGraphics.framework in Frameworks */,
+				2ADA86AA98194C72B1229F15 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +63,7 @@
 				9199548716523A5E00A6A1F4 /* Tasks */,
 				9199548016523A5E00A6A1F4 /* Frameworks */,
 				9199547E16523A5E00A6A1F4 /* Products */,
+				F61CBC876BC9443FAAED6270 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -76,6 +81,7 @@
 				9199548116523A5E00A6A1F4 /* UIKit.framework */,
 				9199548316523A5E00A6A1F4 /* Foundation.framework */,
 				9199548516523A5E00A6A1F4 /* CoreGraphics.framework */,
+				36D3101934B14492B0AD6A7B /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -85,9 +91,9 @@
 			children = (
 				9199549016523A5E00A6A1F4 /* TKAppDelegate.h */,
 				9199549116523A5E00A6A1F4 /* TKAppDelegate.m */,
+				919954B316523B4B00A6A1F4 /* TKTasksViewController.h */,
+				919954B416523B4B00A6A1F4 /* TKTasksViewController.m */,
 				9199549916523A5E00A6A1F4 /* MainStoryboard.storyboard */,
-				9199549C16523A5E00A6A1F4 /* TKViewController.h */,
-				9199549D16523A5E00A6A1F4 /* TKViewController.m */,
 				9199548816523A5E00A6A1F4 /* Supporting Files */,
 			);
 			path = Tasks;
@@ -117,6 +123,7 @@
 				9199547916523A5E00A6A1F4 /* Sources */,
 				9199547A16523A5E00A6A1F4 /* Frameworks */,
 				9199547B16523A5E00A6A1F4 /* Resources */,
+				7C755E07C0B64A93AAC587AF /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -169,6 +176,23 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		7C755E07C0B64A93AAC587AF /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		9199547916523A5E00A6A1F4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -176,7 +200,7 @@
 			files = (
 				9199548E16523A5E00A6A1F4 /* main.m in Sources */,
 				9199549216523A5E00A6A1F4 /* TKAppDelegate.m in Sources */,
-				9199549E16523A5E00A6A1F4 /* TKViewController.m in Sources */,
+				919954B516523B4B00A6A1F4 /* TKTasksViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,6 +277,7 @@
 		};
 		919954A216523A5E00A6A1F4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F61CBC876BC9443FAAED6270 /* Pods.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Tasks/Tasks-Prefix.pch";
@@ -264,6 +289,7 @@
 		};
 		919954A316523A5E00A6A1F4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F61CBC876BC9443FAAED6270 /* Pods.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Tasks/Tasks-Prefix.pch";
@@ -292,6 +318,7 @@
 				919954A316523A5E00A6A1F4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
